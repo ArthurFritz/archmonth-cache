@@ -13,12 +13,12 @@ public class CacheDelayService {
     private final Logger LOG = LoggerFactory.getLogger(CacheDelayService.class);
 
     @CacheResult(cacheName = "cache-example")
-    public LocalDateTime randomInformationCache(String parametro) {
-        return randomInformation(parametro);
+    public LocalDateTime randomInformationCache(String key) {
+        return randomInformation(key);
     }
 
-    public LocalDateTime randomInformation(String parametro) {
-        LOG.info("Call parameter {} not used cache", parametro);
+    public LocalDateTime randomInformation(String key) {
+        LOG.info("Call key {} not used cache", key);
         try {
             Thread.sleep(5000L);
         } catch (InterruptedException e) {

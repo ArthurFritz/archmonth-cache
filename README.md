@@ -2,7 +2,14 @@
 
 This project example to explain about cache, in the event `Arch Month DB1`
 
+This check work heroku application
 https://archmonth-cache.herokuapp.com/
+
+Only in the first call not used cache
+https://archmonth-cache.herokuapp.com/cache?key=abc
+
+Not used cache in the all requests
+https://archmonth-cache.herokuapp.com/no-cache?key=abc
 
 
 ## Running the application in dev mode
